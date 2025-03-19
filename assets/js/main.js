@@ -348,5 +348,42 @@
 				});
 
 	});
+	document.addEventListener("DOMContentLoaded", function () {
+		const projectBoxes = document.querySelectorAll(".project-box");
+	  
+		const observer = new IntersectionObserver(
+		  (entries) => {
+			entries.forEach((entry) => {
+			  if (entry.isIntersecting) {
+				entry.target.classList.add("visible");
+	  
+				// Animate text letter by letter
+				const textSpans = entry.target.querySelectorAll(".project-content pre span");
+				textSpans.forEach((span, index) => {
+				  setTimeout(() => {
+					span.classList.add("visible");
+				  }, index * 50); // Delay each letter by 50ms
+				});
+	  
+				// Stop observing after animation
+				observer.unobserve(entry.target);
+			  }
+			});
+		  },
+		  {
+			threshold: 0.5, // Trigger when 50% of the element is visible
+		  }
+		);
+	  
+		projectBoxes.forEach((box) => {
+		  observer.observe(box);
+		});
+	  });
+	const textSpans = entry.target.querySelectorAll(".project-content pre span");
+	textSpans.forEach((span, index) => {
+		setTimeout(() => {
+			span.classList.add("visible");
+		  }, index * 50); 
+		});
 
 })(jQuery);

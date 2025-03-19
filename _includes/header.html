@@ -1,30 +1,40 @@
 <!-- Wrapper -->
 <div id="wrapper">
 
-<!-- Header -->
-<header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
-	<a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
-	<nav>
-		<a href="#menu">Menu</a>
+	<!-- Header -->
+	<header id="header">
+		<a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
+		<nav>
+			<a href="#menu">Sections</a>
+		</nav>
+	</header>
+	
+	<!-- Menu -->
+	<nav id="menu">
+		<ul class="links">
+			<!-- Home section -->
+			<li><a href="{{ "" | absolute_url }}/">Home</a></li>
+	
+			<!-- About Me section -->
+			<li><a href="{{ site.baseurl }}/about/">About Me</a></li>
+	
+			<!-- Skills section -->
+			<li><a href="{{ site.baseurl }}/skills/">Skills</a></li>
+	
+			<!-- Education section -->
+			<li><a href="{{ site.baseurl }}/education/">Education</a></li>
+	
+			<!-- Work Experience section -->
+			<li><a href="{{ site.baseurl }}/work-experience/">Work Experience</a></li>
+	
+			<!-- Projects section -->
+			<li><a href="{{ site.baseurl }}/projects/">Projects</a></li>
+	
+			<!-- Courses & Certifications section -->
+			<li><a href="{{ site.baseurl }}/courses-certifications/">Courses & Certifications</a></li>
+	
+			<!-- Awards section -->
+			<li><a href="{{ site.baseurl }}/awards/">Awards</a></li>
+		</ul>
 	</nav>
-</header>
-
-<!-- Menu -->
-<nav id="menu">
-	<ul class="links">
-        {% for page in site.pages %}
-		    {% if page.layout == "home" %}
-		        <li><a href="{{ "" | absolute_url }}/">{{ page.title }}</a></li>
-	    	{% endif %}
-		{% endfor %}
-		{% for page in site.html_pages %}
-		    {% if page.layout != "home" and page.nav-menu == true %}
-		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-		    {% endif %}
-		{% endfor %}
-	</ul>
-	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">Get Started</a></li>
-		<li><a href="#" class="button fit">Log In</a></li>
-	</ul>
-</nav>
+	
