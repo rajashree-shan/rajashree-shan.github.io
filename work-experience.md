@@ -2,6 +2,7 @@
 layout: page
 title: "Work Experience"
 permalink: /work-experience/
+show_tile: true
 description: "My professional work experience."
 order: 2
 ---

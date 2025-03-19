@@ -3,6 +3,7 @@ layout: page
 title: "Skills"
 permalink: /skills/
 description: "My technical and soft skills."
+show_tile: true
 order: 3
 ---
 <div style="padding-left: 20px;">

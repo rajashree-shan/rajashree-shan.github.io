@@ -3,6 +3,7 @@ layout: page
 title: "Projects"
 permalink: /projects/
 description: "My projects"
+show_tile: true
 order: 4
 ---
 
