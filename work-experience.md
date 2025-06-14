@@ -11,138 +11,138 @@ order: 2
   <h2 style="border-bottom: 2px solid white; padding-bottom: 5px; display: inline-block;">Work Experience</h2>
 </div>
 
-<html>
-<head>
-  <style>
-    .experience-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px; /* Further increased gap between boxes */
-      justify-content: center;
+<style>
+  .timeline {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #444;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+  }
+
+  .timeline-entry {
+    position: relative;
+    width: 50%;
+    padding: 30px 40px;
+    box-sizing: border-box;
+  }
+
+  .timeline-entry.left {
+    left: 0;
+  }
+
+  .timeline-entry.right {
+    left: 50%;
+  }
+
+  .timeline-entry::before {
+    content: " ";
+    position: absolute;
+    top: 40px;
+    right: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #1f2a38;
+  }
+
+  .timeline-entry.right::before {
+    left: -10px;
+    right: auto;
+    border-color: transparent #1f2a38 transparent transparent;
+  }
+
+  .timeline-content {
+    background: #1f2a38;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  }
+
+  .timeline-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+
+  .timeline-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .timeline-content .year {
+    display: inline-block;
+    margin-top: 12px;
+    background: rgba(255,255,255,0.1);
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    color: #ddd;
+  }
+
+  @media screen and (max-width: 768px) {
+    .timeline::after {
+      left: 10px;
     }
-    .experience-item {
-      position: relative;
-      width: 730px; /* Further increased box size */
-      height: 730px; /* Further increased box size */
-      background-size: cover; /* Ensure background image covers the box */
-      background-position: center;
-      border-radius: 20px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 38px; /* Further increased padding */
-      color: white; /* Text color */
-    }
-    .experience-item::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
+    .timeline-entry {
       width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.75); /* Dark overlay for better text visibility */
-      z-index: 1;
+      padding-left: 30px;
+      padding-right: 15px;
     }
-    .experience-content {
-      position: relative;
-      z-index: 2;
-      opacity: 0;
-      animation: fadeIn 1s ease forwards;
+    .timeline-entry.right {
+      left: 0;
     }
-    .experience-content p {
-      margin: 0;
-      opacity: 0;
-      animation: slideIn 0.5s ease forwards;
-      animation-delay: calc(var(--index) * 0.3s); /* Delay for line-by-line animation */
-    }
-    .company-logo {
-      width: 180px; /* Further increased logo size */
-      height: 140px; /* Further increased logo size */
-      margin-bottom: 20px; /* Further increased margin */
-      opacity: 0;
-      animation: fadeIn 0.5s ease forwards;
-      animation-delay: 0.5s;
-    }
-    .experience-title {
-      font-size: 32px; /* Further increased font size */
-      font-weight: bold;
-      margin-bottom: 30px; /* Further increased margin */
-      opacity: 0;
-      animation: fadeIn 0.5s ease forwards;
-      animation-delay: 0.8s;
-    }
-    .experience-summary {
-      font-size: 20px; /* Further increased font size */
-      margin-bottom: 40px; /* Further increased margin */
-      opacity: 0;
-      animation: fadeIn 0.5s ease forwards;
-      animation-delay: 1.1s;
-    }
-    .year-button {
-      font-size: 15px; /* Further increased font size */
-      padding: 10px 10px 10px 10px; /* Further increased button size */
-      background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent button */
-      color: white;
+    .timeline-entry::before,
+    .timeline-entry.right::before {
+      left: 10px;
       border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      opacity: 0;
-      animation: fadeIn 0.5s ease forwards;
-      animation-delay: 1.4s;
     }
-    .year-button:hover {
-      background-color: rgba(255, 255, 255, 0.3); /* Hover effect */
-    }
+  }
+</style>
 
-    /* Keyframes for animations */
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-    @keyframes slideIn {
-      from {
-        transform: translateY(20px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-  </style>
-</head>
-<body>
+<div class="timeline">
 
-  <div class="experience-container">
-    <!-- Barclays - Data Engineer -->
-    <div class="experience-item" style="background-image: url('/assets/images/bg.jpg');">
-      <div class="experience-content">
-        <img src="/assets/images/Barclays-Logo.png" alt="Barclays" class="company-logo">
-        <div class="experience-title">Data Engineer</div>
-        <div class="experience-summary">
-          Developed an AWS infrastructure optimization initiative by developing Python-based lifecycle management solutions for streamlined data archiving and file transitions . Drove significant cost savings through custom automation scripts that identified and managed idle EC2 instances, eliminating resource waste. Designed and implemented high-performance ETL workflows leveraging Ab Initio and SQL, enabling seamless data integration and analytics capabilities during AWS migration. Led end-to-end application deployment across multiple environments, incorporating comprehensive testing and monitoring systems to enhance operational efficiency and system reliability. Successfully delivered these solutions to USA clients, ensuring optimized performance and scalability.
-        </div>
-        <button class="year-button">2022 - 2024</button>
-      </div>
-    </div>
-
-    <!-- The Sparks Foundation - Data Science -->
-    <div class="experience-item" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
-      <div class="experience-content">
-        <img src="/assets/images/sf.jpeg" alt="The Sparks Foundation" class="company-logo">
-        <div class="experience-title">Data Science Intern</div>
-        <div class="experience-summary">
-          Analyzed diverse datasets and developed predictive models using Supervised & Unsupervised Learning techniques in Python to drive data-driven decision-making. Optimized machine learning models to improve performance and accuracy. Designed interactive dashboards in Tableau, leveraging data visualization techniques to present key insights to stakeholders, enabling better strategic planning and trend analysis. The tech stack included Python, Scikit-learn, TensorFlow, Tableau, and SQL for data processing, modeling, and visualization.
-        </div>
-        <button class="year-button">2021</button>
-      </div>
+<!-- Pear -->
+  <div class="timeline-entry left">
+    <div class="timeline-content">
+      <h3>Data Science/ML Intern @ Pear</h3>
+      <p>
+        Spearheaded the development of an HDBSCAN-based clustering pipeline to analyze YoY referral patterns across 6M+ healthcare records. Engineered preprocessing workflows in PySpark and Pandas to compute referral growth, normalize trends, and detect behavioral anomalies. Identified a 12% decline in high-value referrals within key clusters, driving strategy shifts in physician engagement. Delivered insights through automated reporting and stakeholder-facing presentations. Tools included PySpark, Scikit-learn, SQL, and LLM
+      </p>
+      <div class="year">MAY 2024 - AUG 2024</div>
     </div>
   </div>
 
-</body>
-</html>
+  <!-- Barclays -->
+  <div class="timeline-entry right">
+    <div class="timeline-content">
+      <h3>Data Engineer @ Barclays</h3>
+      <p>
+        Led an AWS infrastructure cost-optimization initiative by developing Python-based automation to manage EC2 lifecycle and archive inactive S3 resources. Designed high-performance ETL pipelines using Ab Initio and SQL to support AWS data migration. Deployed applications across multi-env setups with integrated testing and monitoring, improving operational reliability. Collaborated with US-based teams to deliver scalable, production-grade solutions.
+      </p>
+      <div class="year">AUG 2022 – JUL 2024</div>
+    </div>
+  </div>
+
+  
+  <!-- Sparks Foundation -->
+  <div class="timeline-entry left">
+    <div class="timeline-content">
+      <h3>Data Science Intern @ The Sparks Foundation</h3>
+      <p>
+        Developed supervised and unsupervised ML models to solve business analytics challenges using Python and Scikit-learn. Created data pipelines to preprocess and analyze structured datasets. Designed Tableau dashboards to visualize insights and enable non-technical stakeholders to act on data trends. Contributed to model performance improvements and interpretability.
+      </p>
+      <div class="year">JUL 2021 - AUG 2021</div>
+    </div>
+  </div>
+
+</div>

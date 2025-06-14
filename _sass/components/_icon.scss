@@ -48,3 +48,17 @@
 			}
 		}
 	}
+	.icon.alt.leetcode:before {
+		content: "";
+		background-color: _palette(fg-bold); // same as others
+		background-image: url("/assets/images/leetcode-icon.png"); // or .svg
+		background-repeat: no-repeat;
+		background-size: 1.25em 1.25em;
+		background-position: center center;
+		display: inline-block;
+		width: 2em;
+		height: 2em;
+		border-radius: 100%;
+		vertical-align: middle;
+	  }
+	  

@@ -16,7 +16,7 @@ order: 5
     <img src="{{ '/assets/images/ub.png' | relative_url }}" alt="University at Buffalo Logo" width="305">
     <h3>University at Buffalo, SUNY</h3>
     <p><strong>Master of Science in Computer Science (Specialization in AI/ML)</strong></p>
-    <span style="display: inline-block; padding: 8px 16px; font-size: 14px; font-weight: bold; color: white; background-color:#007BFF; border-radius: 5px;">2024 - 2026</span>
+    <span style="display: inline-block; padding: 8px 16px; font-size: 14px; font-weight: bold; color: white; background-color:#007BFF; border-radius: 5px;">2024 - 2025</span>
     <br><br> 
     <h4 style="text-align: center;">Relevant Coursework</h4> 
     <p style="text-align: left; padding: 0 20px;"><i>Data Intensive Computing, Deep Learning, Machine Learning, Algorithms, Operating Systems, Data Models and Query Languages</i></p>
