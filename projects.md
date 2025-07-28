@@ -105,15 +105,15 @@ order: 4
   </div>
 </div>
 <!-- Project 5 -->
-<div class="project-box" onclick="openModal('modal6')">
+<div class="project-box" onclick="openModal('modal5')">
   <div class="project-title">ETL Pipeline Project</div>
   <div class="project-subtitle">Click to learn more</div>
   <a href="https://github.com/rajashree-shan/ETL-Pipeline-Project" class="live-demo" target="_blank">View Code</a>
 </div>
 
-<div id="modal6" class="modal">
+<div id="modal5" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modal6')">&times;</span>
+    <span class="close" onclick="closeModal('modal5')">&times;</span>
     <h3>Airflow ETL Pipeline: PostgreSQL to Redshift</h3>
     <p>Designed a production-ready ETL pipeline using Apache Airflow to automate daily data transfers from a local PostgreSQL database to Amazon Redshift.</p>
     <ul>
@@ -134,34 +134,78 @@ order: 4
 </div>
 <!-- Project 6 -->
 <div class="project-box" onclick="openModal('modal6')">
-  <div class="project-title">PoachAlert - Wildlife Poaching Detector</div>
+  <div class="project-title">AskMyPDF - Smart PDF Search Assistant</div>
   <div class="project-subtitle">Click to learn more</div>
-  <a href="https://huggingface.co/spaces/rshree01/PoachAlert-system-demo" class="live-demo" target="_blank">Live Demo</a>
+  <a href="https://huggingface.co/spaces/rshree01/AskmyPdf" class="live-demo" target="_blank">Live Demo</a>
 </div>
 
 <div id="modal6" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal6')">&times;</span>
+    <h3>AskMyPDF – Intelligent PDF Q&A Interface</h3>
+    <p>AskMyPDF is an interactive PDF search and comprehension assistant. It enables users to ask natural language questions about uploaded PDFs and get precise, contextual answers with page-level highlights.</p>
+    <ul>
+      <li> Upload and parse scanned or text-based PDFs</li>
+      <li> Extracts key phrases and highlights them on relevant pages</li>
+      <li> Uses embeddings to semantically search across document content</li>
+      <li> Displays results with page number and contextual snippet</li>
+      <li> Custom-built with efficient chunking and caching mechanisms</li>
+    </ul>
+    <p><strong>Tech Stack:</strong> Python, Sentence Transformers, FAISS, PyMuPDF, Gradio, Hugging Face Spaces</p>
+  </div>
+</div>
+
+
+<!-- Project 7 -->
+<div class="project-box" onclick="openModal('modal7')">
+  <div class="project-title">PoachAlert - Wildlife Poaching Detector</div>
+  <div class="project-subtitle">Click to learn more</div>
+  <a href="https://huggingface.co/spaces/rshree01/PoachAlert-system-demo" class="live-demo" target="_blank">Live Demo</a>
+</div>
+
+<div id="modal7" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal7')">&times;</span>
     <h3>PoachAlert: Real-Time Wildlife Poaching Detection</h3>
     <p>Developed a computer vision system to detect illegal poaching activity using deep learning models. Aims to support conservation efforts in real-time surveillance scenarios.</p>
     <ul>
-      <li>📸 Object detection using YOLO-Nano for lightweight deployment</li>
-      <li>🧠 Face recognition of forest rangers via ArcFace</li>
-      <li>⚠️ Flags unknown individuals and unauthorized activity in conservation zones</li>
-      <li>🚀 Deployed as a demo on Hugging Face Spaces</li>
+      <li> Object detection using YOLO-Nano for lightweight deployment</li>
+      <li> Face recognition of forest rangers via ArcFace</li>
+      <li> Flags unknown individuals and unauthorized activity in conservation zones</li>
+      <li> Deployed as a demo on Hugging Face Spaces</li>
     </ul>
     <p><strong>Tech Stack:</strong> Python, YOLO-Nano, ArcFace, OpenCV, Gradio, Hugging Face Spaces</p>
   </div>
 </div>
-  <!-- Project 7 -->
-  <div class="project-box" onclick="openModal('modal7')">
+ <!-- Project 8 -->
+  <div class="project-box" onclick="openModal('modal8')">
+    <div class="project-title">Crime Analysis: A Data-Driven Approach to
+Public Safety</div>
+    <div class="project-subtitle">Click to learn more</div>
+    <a href="https://public.tableau.com/app/profile/rajashree.shanmuganathan/viz/Crime_Data_Analysis/Dashboard1" class="live-demo" target="_blank">Live Demo</a>
+  </div>
+  <div id="modal8" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal8')">&times;</span>
+      <h3>Crime Data Analysis</h3>
+      <p>Analyzed public datasets to predict and visualize high-risk areas using machine learning and visual analytics.</p>
+      <ul>
+        <li>Cleaned and processed Buffalo state data</li>
+        <li>Built visual dashboards to show trends</li>
+        <li>Used Random Forest, XGBoost for predictions</li>
+      </ul>
+      <p><strong>Tech Stack:</strong> Python, Pandas, Seaborn, Tableau</p>
+    </div>
+  </div>
+  <!-- Project 9 -->
+  <div class="project-box" onclick="openModal('modal9')">
     <div class="project-title">MIFNet: Gastric Cancer Detection and Classification</div>
     <div class="project-subtitle">Click to learn more</div>
     <a href="https://doi.org/10.33436/v33i4y202309" class="live-demo" target="_blank">Link</a>
   </div>
-  <div id="modal7" class="modal">
+  <div id="modal9" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal('modal7')">&times;</span>
+      <span class="close" onclick="closeModal('modal9')">&times;</span>
       <h3>MIFNet: Gastric Cancer Detection</h3>
       <p>Developed a deep learning model (MIFNet) for accurate gastric cancer classification and localization in histopathological images.</p>
       <ul>
@@ -173,14 +217,14 @@ order: 4
     </div>
   </div>
 
-  <!-- Project 8 -->
-  <div class="project-box" onclick="openModal('modal8')">
+  <!-- Project 10 -->
+  <div class="project-box" onclick="openModal('modal10')">
     <div class="project-title">Movie Recommendation System</div>
     <div class="project-subtitle">Click to learn more</div>
   </div>
-  <div id="modal8" class="modal">
+  <div id="modal10" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal('modal8')">&times;</span>
+      <span class="close" onclick="closeModal('modal10')">&times;</span>
       <h3>Hybrid Movie Recommendation</h3>
       <p>Built a hybrid movie recommender using collaborative and content-based filtering with dynamic user feedback learning.</p>
       <ul>
@@ -191,35 +235,16 @@ order: 4
     </div>
   </div>
 
-  <!-- Project 9 -->
-  <div class="project-box" onclick="openModal('modal9')">
-    <div class="project-title">Crime Analysis: A Data-Driven Approach to
-Public Safety</div>
-    <div class="project-subtitle">Click to learn more</div>
-    <a href="https://public.tableau.com/app/profile/rajashree.shanmuganathan/viz/Crime_Data_Analysis/Dashboard1" class="live-demo" target="_blank">Live Demo</a>
-  </div>
-  <div id="modal9" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal9')">&times;</span>
-      <h3>Crime Data Analysis</h3>
-      <p>Analyzed public datasets to predict and visualize high-risk areas using machine learning and visual analytics.</p>
-      <ul>
-        <li>Cleaned and processed Buffalo state data</li>
-        <li>Built visual dashboards to show trends</li>
-        <li>Used Random Forest, XGBoost for predictions</li>
-      </ul>
-      <p><strong>Tech Stack:</strong> Python, Pandas, Seaborn, Tableau</p>
-    </div>
-  </div>
+ 
 
-  <!-- Project 10 -->
-  <div class="project-box" onclick="openModal('modal10')">
+  <!-- Project 11 -->
+  <div class="project-box" onclick="openModal('modal11')">
     <div class="project-title">Diabetes Prediction System</div>
     <div class="project-subtitle">Click to learn more</div>
   </div>
-  <div id="modal10" class="modal">
+  <div id="modal11" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal('modal10')">&times;</span>
+      <span class="close" onclick="closeModal('modal11')">&times;</span>
       <h3>Diabetes Prediction System</h3>
       <p>End-to-end pipeline for diabetes prediction using EDA, ML, and Streamlit for real-time interaction.</p>
       <ul>

@@ -116,7 +116,9 @@ order: 2
     <div class="timeline-content">
       <h3>Data Science/ML Intern @ Pear</h3>
       <p>
-        Spearheaded the development of an HDBSCAN-based clustering pipeline to analyze YoY referral patterns across 6M+ healthcare records. Engineered preprocessing workflows in PySpark and Pandas to compute referral growth, normalize trends, and detect behavioral anomalies. Identified a 12% decline in high-value referrals within key clusters, driving strategy shifts in physician engagement. Delivered insights through automated reporting and stakeholder-facing presentations. Tools included PySpark, Scikit-learn, SQL, and LLM
+        Developed an unsupervised learning algorithm on big data (6M+ rows) to cluster medical referral patterns resulting in a dimension reduction of 95%.
+        Created an LLM implementation of LLaMA3 to synthesize machine generated output into natural language descriptions providing improved customer engagement.
+        Implemented PySpark data processing techniques to ingest Big Data and Developed alongside LLM subject-matter-experts a locally hosted LLM with RAG architecture to ingest proprietary medical data to be used for diagnosis.
       </p>
       <div class="year">MAY 2024 - AUG 2024</div>
     </div>

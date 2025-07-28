@@ -2,7 +2,7 @@
 title: Rajashree's Portfolio
 email: rshree2001@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-description: "Passionate about data, problem-solving, and creating impactful solutions."
+description: "Passionate about AI, data, problem-solving, and creating impactful solutions."
 url: "https://rajashree-shan.github.io"
 author: Rajashree
 country: United States of America
@@ -20,6 +20,7 @@ socials:
   LinkedIn: https://www.linkedin.com/in/rajashree-s
   GitHub: https://github.com/rshree-shan
   LeetCode: https://leetcode.com/r_shree
+  Medium: https://medium.com/@rshree2001
   
 
 # build settings

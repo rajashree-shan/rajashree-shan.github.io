@@ -21,7 +21,7 @@ order: 6
 
       <div class="cert-card-dark">
         <h4>☁️ Azure AI Engineer Associate</h4>
-        <a href="#" target="_blank">
+        <a href="https://learn.microsoft.com/api/credentials/share/en-us/RajashreeShanmuganathan-4984/B61276709D191C01?sharingId=A5E655157CCA7F31" target="_blank">
           <button class="cert-btn-dark">VIEW CERTIFICATE</button>
         </a>
       </div>

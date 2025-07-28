@@ -93,7 +93,6 @@ order: 3
   <div class="skills-group">
     <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="SQL" class="skill-image"><div class="skill-name">SQL</div></div>
     <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="skill-image"><div class="skill-name">PostgreSQL</div></div>
-    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="skill-image"><div class="skill-name">MongoDB</div></div>
   </div>
 
   <!-- ETL / Data Engineering -->
@@ -118,6 +117,14 @@ order: 3
     <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" class="skill-image"><div class="skill-name">Pandas</div></div>
   </div>
 
+  <!-- LLM / NLP -->
+  <div class="group-title">LLM / NLP</div>
+  <div class="skills-group">
+    <div class="skill-item"><img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="RAG" class="skill-image"><div class="skill-name">RAG</div></div>
+    <div class="skill-item"><img src="https://img.icons8.com/ios-filled/50/000000/database.png" alt="FAISS" class="skill-image"><div class="skill-name">FAISS</div></div>
+    <div class="skill-item"><img src="https://img.icons8.com/ios-filled/50/000000/robot-2.png" alt="LLMs" class="skill-image"><div class="skill-name">LLMs</div></div>
+  </div>
+
   <!-- Web Development -->
   <div class="group-title">Web Development</div>
   <div class="skills-group">
@@ -125,29 +132,30 @@ order: 3
     <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-image"><div class="skill-name">CSS</div></div>
     <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-image"><div class="skill-name">JavaScript</div></div>
   </div>
+
   <!-- Soft Skills -->
   <div class="group-title">Soft Skills</div>
-<div class="skills-group">
-  <div class="skill-item">
-    <img src="https://img.icons8.com/ios-filled/50/000000/communication.png" alt="Communication" class="skill-image">
-    <div class="skill-name">Communication</div>
+  <div class="skills-group">
+    <div class="skill-item">
+      <img src="https://img.icons8.com/ios-filled/50/000000/communication.png" alt="Communication" class="skill-image">
+      <div class="skill-name">Communication</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://img.icons8.com/ios-filled/50/000000/teamwork.png" alt="Teamwork" class="skill-image">
+      <div class="skill-name">Teamwork</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://img.icons8.com/ios-filled/50/000000/light-on.png" alt="Problem-Solving" class="skill-image">
+      <div class="skill-name">Problem-Solving</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://img.icons8.com/ios-filled/50/000000/time-management.png" alt="Time Management" class="skill-image">
+      <div class="skill-name">Time Management</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://img.icons8.com/ios-filled/50/000000/leader.png" alt="Leadership" class="skill-image">
+      <div class="skill-name">Leadership</div>
+    </div>
   </div>
-  <div class="skill-item">
-    <img src="https://img.icons8.com/ios-filled/50/000000/teamwork.png" alt="Teamwork" class="skill-image">
-    <div class="skill-name">Teamwork</div>
-  </div>
-  <div class="skill-item">
-    <img src="https://img.icons8.com/ios-filled/50/000000/light-on.png" alt="Problem-Solving" class="skill-image">
-    <div class="skill-name">Problem-Solving</div>
-  </div>
-  <div class="skill-item">
-    <img src="https://img.icons8.com/ios-filled/50/000000/time-management.png" alt="Time Management" class="skill-image">
-    <div class="skill-name">Time Management</div>
-  </div>
-  <div class="skill-item">
-    <img src="https://img.icons8.com/ios-filled/50/000000/leader.png" alt="Leadership" class="skill-image">
-    <div class="skill-name">Leadership</div>
-  </div>
-</div>
 </body>
 </html>
